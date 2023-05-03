@@ -1,0 +1,13 @@
+schemes:
+   TestScheme1:
+       build:
+          targets:
+              DemoUnitTests: [test]
+       test:
+          gatherCoverageData: true
+          targets:
+              - name: DemoUnitTests
+              - parallelizable: true
+          testPlans:
+              - path: ./Tests/DemoUnitTests.xctestplan
+              - defaultPlan: true
